@@ -11,8 +11,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/dashresto" component={DashResto} />
-        <Route path="/dashfood" component={DashFood} />
-        <Route path="/dashresto" component={DashResto} />
+        <Route path="/dashresto/:id" component={DashFood} />
       </Switch>
     </div>
   );
