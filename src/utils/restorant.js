@@ -1,7 +1,7 @@
 const restorant = [
   {
     id: "1",
-    nama: "MC Donalds Semarang",
+    nama: "MC Donalds ",
     lokasi: "Penggaron raya dekat SPBU",
     gambar:
       "https://2.bp.blogspot.com/-gHsnttJuCu8/WCJq7JdlsVI/AAAAAAAAJ_E/OfYkzGXbtRI6oKs7EA9LaG0XcdmAZP4BACLcB/s1600/bitebrands-daftar-nama-perusahaan-makanan-cepat-saji-restoran-fast-food-dunia-terkenal02.jpg",

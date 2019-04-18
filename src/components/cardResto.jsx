@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Card, CardImg, CardBody } from "reactstrap";
 import { Link } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 export default class cardResto extends Component {
   render() {
     const { id, nama, lokasi, gambar } = this.props.item;
+
     return (
       <div>
         <div>
@@ -20,7 +22,7 @@ export default class cardResto extends Component {
               <h1>{nama}</h1>
               <p>{lokasi}</p>
               <Link tag={Link} to={`/dashresto/${id}`}>
-                pilih
+                <Button style={{ backgroundColor: "yellow" }}>pilih</Button>
               </Link>
             </CardBody>
           </Card>

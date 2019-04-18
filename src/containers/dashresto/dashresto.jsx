@@ -21,7 +21,7 @@ class DashResto extends Component {
         <Row>
           {this.state.base.map(item => {
             return (
-              <Col xs="4">
+              <Col sm>
                 {" "}
                 <CardResto item={item} />
               </Col>
