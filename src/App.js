@@ -7,7 +7,7 @@ import DashFood from "./containers/dashfood/dashfood";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "orange" }}>
+    <div>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/dashresto" component={DashResto} />

@@ -29,19 +29,23 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>
             <img
               style={{ width: 400, height: 200 }}
-              src="https://2.bp.blogspot.com/-gHsnttJuCu8/WCJq7JdlsVI/AAAAAAAAJ_E/OfYkzGXbtRI6oKs7EA9LaG0XcdmAZP4BACLcB/s1600/bitebrands-daftar-nama-perusahaan-makanan-cepat-saji-restoran-fast-food-dunia-terkenal02.jpg"
+              src="https://cdn.junglecreations.com/wp/junglecms/2018/07/556bb947-jw-photo-heinz-beanz-burger-1024x576.jpg"
             />
             <br />
             <br />
-            <button className={classes.root}>Beli Makanan</button>
-          </Paper>
-        </Grid>
-        <Grid style={{ marginLeft: 22 }}>
-          <Paper className={classes.paper}>
-            <img
-              style={{ width: 400, height: 200 }}
-              src="http://turistite.com/wp-content/uploads/2018/09/creative-starbucks-exterior-paint-colors-in-starbucks-opens-first-store-in-ferguson-in-low-in-e-munity-of-starbucks-exterior-paint-colors.jpg"
-            />
+            <button
+              style={{
+                width: 40,
+                borderRadius: 5,
+                backgroundColor: "red",
+                color: "white"
+              }}
+            >
+              +
+            </button>
+            <button style={{ marginLeft: 5, width: 40, borderRadius: 5 }}>
+              -
+            </button>
             <br />
             <br />
             <button>Beli Makanan</button>
@@ -51,8 +55,27 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>
             <img
               style={{ width: 400, height: 200 }}
-              src="https://moneyinc.com/wp-content/uploads/2019/01/Pizza-Hut_1.jpg"
+              src="https://awsimages.detik.net.id/community/media/visual/2018/04/13/69e9d99d-3bda-4521-8514-c49e5302ad40.jpeg?a=1"
             />
+            <br />
+            <br />
+            <button>+</button>
+            <button>-</button>
+            <br />
+            <br />
+            <button>Beli Makanan</button>
+          </Paper>
+        </Grid>
+        <Grid style={{ marginLeft: 22 }}>
+          <Paper className={classes.paper}>
+            <img
+              style={{ width: 400, height: 200 }}
+              src="https://food-images.files.bbci.co.uk/food/recipes/alpine_pizza_32132_16x9.jpg"
+            />
+            <br />
+            <br />
+            <button>+</button>
+            <button>-</button>
             <br />
             <br />
             <button>Beli Makanan</button>
@@ -62,8 +85,12 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>
             <img
               style={{ width: 400, height: 200 }}
-              src="https://www.gannett-cdn.com/-mm-/970af83b2cab3e3fe5ffe1fd8bae8cab3204c7ad/c=3-0-2014-1512/local/-/media/2018/07/19/WIGroup/Milwaukee/636676095240985780-depcol25-grate-interior.jpg?width=520&height=390&fit=crop"
+              src="https://www.kfc.com.au/sites/default/files/WEBSITE_CATERING_768x432px_V2.jpg"
             />
+            <br />
+            <br />
+            <button>+</button>
+            <button>-</button>
             <br />
             <br />
             <button>Beli Makanan</button>
@@ -73,8 +100,12 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>
             <img
               style={{ width: 400, height: 200 }}
-              src="http://media.bizj.us/view/img/1426141/cornerbakery*500.jpg"
+              src="https://sifu.unileversolutions.com/image/id-ID/recipe-topvisual/2/1260-709/donat-kentang-50321491.jpg"
             />
+            <br />
+            <br />
+            <button>+</button>
+            <button>-</button>
             <br />
             <br />
             <button>Beli Makanan</button>
@@ -84,8 +115,12 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>
             <img
               style={{ width: 400, height: 200 }}
-              src="https://eatatfish.com/wp-content/uploads/2017/10/FISH-restaurant-exterior.jpg"
+              src="https://www.wantedinrome.com/i/preview/storage/uploads/2019/01/starbucks-vatican-rome.jpg"
             />
+            <br />
+            <br />
+            <button>+</button>
+            <button>-</button>
             <br />
             <br />
             <button>Beli Makanan</button>

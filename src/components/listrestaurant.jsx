@@ -65,7 +65,7 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>
             <img
               style={{ width: 400, height: 200 }}
-              src="https://www.gannett-cdn.com/-mm-/970af83b2cab3e3fe5ffe1fd8bae8cab3204c7ad/c=3-0-2014-1512/local/-/media/2018/07/19/WIGroup/Milwaukee/636676095240985780-depcol25-grate-interior.jpg?width=520&height=390&fit=crop"
+              src="https://gastronomyaficionado.files.wordpress.com/2017/11/indonesia-richeese-factory-8.jpg?w=672&h=372&crop=1"
             />
             <br />
             <br />
