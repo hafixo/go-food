@@ -1,11 +1,15 @@
 import React, { Component } from "react";
-import Navbar from "../../components/navbar";
+import Header from "../../components/header";
+import Dashboard from "../../components/dashboard";
+// import Jumbotron from "../../components/jumbotron";
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <Navbar name="GO-FOOD" />
+        <Header />
+        {/* <Jumbotron /> */}
+        <Dashboard />
       </div>
     );
   }
