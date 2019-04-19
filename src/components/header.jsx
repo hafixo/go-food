@@ -99,7 +99,7 @@ class PersistentDrawerLeft extends React.Component {
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
-          style={{ backgroundColor: "white" }}
+          style={{ backgroundColor: "#FFA500" }}
           position="fixed"
           className={classNames(classes.appBar, {
             [classes.appBarShift]: open

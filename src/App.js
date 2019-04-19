@@ -10,7 +10,7 @@ function App() {
     <div>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/dashresto" component={DashResto} />
+        <Route path="/dashresto" exact component={DashResto} />
         <Route path="/dashresto/:id" component={DashFood} />
       </Switch>
     </div>

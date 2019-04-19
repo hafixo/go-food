@@ -1,0 +1,20 @@
+import React, { Component } from "react";
+import { Card, CardImg, CardBody, Button } from "reactstrap";
+
+export default class cardFood extends Component {
+  render() {
+    const { id, nama, harga, gambar } = this.props.item;
+    return (
+      <div>
+        <Card>
+          <CardImg top width="100%" src={gambar} alt="Card image cap" />
+          <CardBody>
+            <h1>{nama}</h1>
+            <p>{harga}</p>
+            <Button>pilih</Button>
+          </CardBody>
+        </Card>
+      </div>
+    );
+  }
+}
