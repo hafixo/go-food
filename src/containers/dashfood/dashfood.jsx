@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../../components/header";
 import food from "../../utils/restorant";
-import CardFood from "../../components/cardFood";
+import CardFood from "../../components/card-food/cardFood";
 import restorant from "../../utils/restorant";
 import { Row, Col } from "reactstrap";
 

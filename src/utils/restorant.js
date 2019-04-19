@@ -25,7 +25,7 @@ const restorant = [
         nama: "Kentang Goreng",
         harga: 7000,
         gambar:
-          "https://cdn.idntimes.com/content-images/community/2018/05/05-mcdonalds-friesw710h4732x-3ce1088c707eb442925ad342e56bdb36_600x400.jpg"
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgtKMR8ivCR7-BriuLrdkK4a8f22PukYS23-wHZQmV3DXmgFxR5g"
       }
     ]
   },
@@ -41,7 +41,7 @@ const restorant = [
         nama: "Ayam Crispy",
         harga: 18000,
         gambar:
-          "https://c.kaskus.id/kaskus_forum_image/ortoju_1497924099.257_.jpg"
+          "https://cdn1-production-images-kly.akamaized.net/yOPkm1uU8pRh9opXJrbslI9TeQU=/680x383/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2489063/original/061542100_1543338691-resep-tepung-kriuk-ayam-goreng-ala-restoran-siap-saji-anti-gagal.jpg"
       },
       {
         id: "2",
@@ -55,7 +55,7 @@ const restorant = [
         nama: "Ice Cream",
         harga: 4000,
         gambar:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpC-t8rdtaXbLzB5vfjoMlRnjyp0Mz2jK0SjC5dXYOyI_j9gFanw"
+          "https://www.biggerbolderbaking.com/wp-content/uploads/2015/03/BBB64-Ice-Cream-Party-Thumbnail-FINAL.jpg"
       }
     ]
   },

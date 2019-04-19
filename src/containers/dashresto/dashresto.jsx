@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../../components/header";
 import restorant from "../../utils/restorant";
-import CardResto from "../../components/cardResto";
+import CardResto from "../../components/card-resto/cardResto";
 import { Row, Col } from "reactstrap";
 
 class DashResto extends Component {
