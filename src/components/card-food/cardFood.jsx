@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Card, CardImg, CardBody, Button } from "reactstrap";
+import { Grid, Paper } from "@material-ui/core";
 
 export default class cardFood extends Component {
   state = {
@@ -10,13 +11,17 @@ export default class cardFood extends Component {
     this.setState({
       count: this.state.count + 1
     });
+    this.setState({
+      qty: this.state.qty + 1
+    });
   };
 
   decrement = () => {
-    this.setState({
-      count: this.state.count - 1
-    });
+    if (this.state.count > 0) {
+      this.setState(prevState => ({ count: prevState.count - 1 }));
+    }
   };
+
   render() {
     const { id, nama, harga, gambar } = this.props.item;
     return (
@@ -40,7 +45,7 @@ export default class cardFood extends Component {
               >
                 +
               </Button>
-              <p>{this.state.count}</p>
+              <h1>{this.state.count}</h1>
             </center>
           </CardBody>
         </Card>

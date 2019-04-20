@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Header from "../../components/header";
-import food from "../../utils/restorant";
 import CardFood from "../../components/card-food/cardFood";
 import restorant from "../../utils/restorant";
 import { Row, Col } from "reactstrap";
+import Pembayaran from "../../components/pembayaran/pembayaran";
 
 class DashFood extends Component {
   componentWillMount() {
@@ -31,6 +31,7 @@ class DashFood extends Component {
             );
           })}
         </Row>
+        <Pembayaran />
       </div>
     );
   }

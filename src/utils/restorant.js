@@ -67,10 +67,10 @@ const restorant = [
     food: [
       {
         id: "1",
-        nama: "Pepperoni Signature",
+        nama: "Pepperoni ",
         harga: 84000,
         gambar:
-          "https://i.pinimg.com/originals/da/27/6f/da276f63f80ceaa586e22b494c7133a2.jpg"
+          "https://jandatri.com/wp-content/uploads/2018/08/Sliced-Pizza.jpg"
       },
       {
         id: "2",
