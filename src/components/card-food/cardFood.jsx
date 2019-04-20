@@ -30,7 +30,7 @@ export default class cardFood extends Component {
           <CardImg top width="100%" src={gambar} alt="Card image cap" />
           <CardBody>
             <h1>{nama}</h1>
-            <p>{harga}</p>
+            <p> Harga :{harga}</p>
             <center>
               <h1 />
               <Button
