@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Header from "../../components/header";
 import CardFood from "../../components/card-food/cardFood";
 import restorant from "../../utils/restorant";
-import { Row, Col, Table } from "reactstrap";
+import { Row, Col, Table, Jumbotron, Container } from "reactstrap";
+import { Button } from "@material-ui/core";
 
 class DashFood extends Component {
   componentWillMount() {
@@ -116,7 +117,7 @@ class DashFood extends Component {
               <Col sm>
                 {" "}
                 <CardFood
-                  name={foods.nama}
+                  nama={foods.nama}
                   gambar={foods.gambar}
                   harga={foods.harga}
                   qty={foods.qty}
@@ -128,23 +129,29 @@ class DashFood extends Component {
           })}
         </Row>
         <div>
-          <Table style={{ marginTop: 30 }}>
-            <thead style={{ backgroundColor: "blue" }}>
-              <tr>
-                <th style={{ color: "white" }}>Nama Pesan</th>
-                <th style={{ color: "white" }}>Jumlah</th>
-                <th style={{ color: "white" }}>Total : {this.state.total}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.orderan.map(orders => (
-                <tr>
-                  <td>{orders.nama}</td>
-                  <td>{orders.qty}</td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
+          <Jumbotron style={{ marginTop: 30, height: 340 }}>
+            <Container fluid>
+              <Table>
+                <thead>
+                  <tr>
+                    <th>Nama Pesan</th>
+                    <th>Jumlah</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {this.state.orderan.map(orders => (
+                    <tr>
+                      <td>{orders.nama}</td>
+                      <td>{orders.qty}</td>
+                      <td>Total : {this.state.total} </td>
+                    </tr>
+                  ))}
+                  <Button>Bayar Sekarang</Button>
+                </tbody>
+              </Table>
+            </Container>
+          </Jumbotron>
         </div>
       </div>
     );

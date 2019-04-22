@@ -10,7 +10,7 @@ export default class cardResto extends Component {
     return (
       <div>
         <div>
-          <Card style={{ width: 400, height: 600, marginLeft: 20 }}>
+          <Card style={{ width: 400, height: 600, marginLeft: 10 }}>
             <CardImg
               top
               width="100%"
