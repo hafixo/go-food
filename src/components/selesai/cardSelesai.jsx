@@ -1,36 +1,31 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
+import React, { Component } from "react";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button
+} from "reactstrap";
 
-const styles = (theme) => ({
-  root: {
-    flexGrow: 1
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: "center",
-    color: theme.palette.text.secondary
+export default class cardSelesai extends Component {
+  render() {
+    return (
+      <div>
+        <Card>
+          <CardImg
+            top
+            width="100%"
+            src={this.props.gambar}
+            alt="Card image cap"
+          />
+          <CardBody>
+            <CardTitle>{this.props.nama}</CardTitle>
+            <CardText>{this.props.harga}</CardText>
+          </CardBody>
+        </Card>
+      </div>
+    );
   }
-});
-
-function CenteredGrid(props) {
-  const { classes } = props;
-
-  return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>xs=12</Paper>
-        </Grid>
-      </Grid>
-    </div>
-  );
 }
-
-CenteredGrid.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(CenteredGrid);

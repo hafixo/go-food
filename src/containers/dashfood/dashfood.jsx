@@ -8,15 +8,13 @@ import { Link } from "react-router-dom";
 
 class DashFood extends Component {
   componentWillMount() {
-    const data = restorant.find(
-      (item) => item.id === this.props.match.params.id
-    );
+    const data = restorant.find(item => item.id === this.props.match.params.id);
     const datafood = data.food;
     this.setState({
       fillfood: datafood
     });
     console.log(datafood);
-    const addQty = data.food.forEach((o) => {
+    const addQty = data.food.forEach(o => {
       o.qty = 0;
     });
     console.log(addQty);
@@ -27,12 +25,12 @@ class DashFood extends Component {
     console.log(this.state.fillfood);
   }
 
-  tambah = (id) => {
+  tambah = id => {
     const { fillfood, orderan } = this.state;
-    const fillOrder = orderan.find((item) => item.id === id);
-    const fillFoods = fillfood.find((item) => item.id === id);
+    const fillOrder = orderan.find(item => item.id === id);
+    const fillFoods = fillfood.find(item => item.id === id);
     this.addPrice(fillFoods.harga);
-    fillfood.map((o) => {
+    fillfood.map(o => {
       if (o.id === fillFoods.id) {
         const updateIntern = (o.qty = fillFoods.qty + 1);
       }
@@ -56,26 +54,24 @@ class DashFood extends Component {
         price: fillOrder.price + fillOrder.harga
       };
       this.setState({
-        orderan: orderan.map((o) => (o.id === fillOrder.id ? update : o))
+        orderan: orderan.map(o => (o.id === fillOrder.id ? update : o))
       });
       return;
     }
   };
-  kurang = (id) => {
+  kurang = id => {
     const { orderan, fillfood } = this.state;
-    const fillOrder = orderan.find((item) => item.id === id);
-    const fillFods = fillfood.find((item) => item.id === id);
+    const fillOrder = orderan.find(item => item.id === id);
+    const fillFods = fillfood.find(item => item.id === id);
     if (fillFods.qty === 0) {
       return;
     } else {
       if (fillOrder.qty === 1) {
         const updateFoods = { ...fillFods, qty: fillFods.qty - 1 };
         this.setState({
-          fillfood: fillfood.map((o) =>
-            o.id === fillFods.id ? updateFoods : o
-          )
+          fillfood: fillfood.map(o => (o.id === fillFods.id ? updateFoods : o))
         });
-        const filterOrder = orderan.filter((item) => item.id !== id);
+        const filterOrder = orderan.filter(item => item.id !== id);
         this.setState({
           orderan: filterOrder
         });
@@ -87,24 +83,20 @@ class DashFood extends Component {
         };
         const updateFoods = { ...fillFods, qty: fillFods.qty - 1 };
         this.setState({
-          fillfood: fillfood.map((o) =>
-            o.id === fillFods.id ? updateFoods : o
-          ),
-          orderan: orderan.map((o) =>
-            o.id === fillOrder.id ? updateOrders : o
-          )
+          fillfood: fillfood.map(o => (o.id === fillFods.id ? updateFoods : o)),
+          orderan: orderan.map(o => (o.id === fillOrder.id ? updateOrders : o))
         });
       }
       this.kurangPrice(fillFods.harga);
     }
   };
-  addPrice = (harga) => {
+  addPrice = harga => {
     this.setState({
       total: this.state.total + harga
     });
   };
 
-  kurangPrice = (harga) => {
+  kurangPrice = harga => {
     this.setState({
       total: this.state.total - harga
     });
@@ -121,7 +113,7 @@ class DashFood extends Component {
       <div>
         <Header />
         <Row>
-          {this.state.fillfood.map((foods) => {
+          {this.state.fillfood.map(foods => {
             return (
               <Col sm>
                 {" "}
@@ -150,7 +142,7 @@ class DashFood extends Component {
                 </thead>
 
                 <tbody>
-                  {this.state.orderan.map((orders) => (
+                  {this.state.orderan.map(orders => (
                     <tr>
                       <td>{orders.nama}</td>
                       <td>{orders.qty}</td>
@@ -159,7 +151,10 @@ class DashFood extends Component {
                 </tbody>
               </Table>
               <Link to="/selesai">
-                <Button style={{ backgroundColor: "red", color: "white" }}>
+                <Button
+                  style={{ backgroundColor: "red", color: "white" }}
+                  onClick={this.props.bayar}
+                >
                   Bayar Sekarang
                 </Button>
               </Link>
