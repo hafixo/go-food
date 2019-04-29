@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
-import Navbar from "./components/navbar";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
       <Switch>
-        <Navbar />
+        <Header />
       </Switch>
     </div>
   );
