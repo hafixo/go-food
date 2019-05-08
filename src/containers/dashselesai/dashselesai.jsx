@@ -41,6 +41,7 @@ export default class dashselesai extends Component {
             })}
           </Row>
         </div>
+        <h1>Total : {this.state.total} </h1>
       </div>
     );
   }

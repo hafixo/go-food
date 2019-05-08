@@ -4,6 +4,7 @@ import { Card, CardImg, CardBody, Button } from "reactstrap";
 export default class cardFood extends Component {
   render() {
     const { id, nama, harga, gambar } = this.props;
+
     return (
       <div>
         <Card>
