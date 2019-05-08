@@ -25,6 +25,11 @@ class DashFood extends Component {
     console.log(this.state.fillfood);
   }
 
+  bayar = () => {
+    const { orderan, total } = this.state;
+    sessionStorage.setItem("order", JSON.stringify(orderan));
+    sessionStorage.setItem("total", JSON.parse(total));
+  };
   tambah = id => {
     const { fillfood, orderan } = this.state;
     const fillOrder = orderan.find(item => item.id === id);
@@ -150,14 +155,14 @@ class DashFood extends Component {
                   ))}
                 </tbody>
               </Table>
-              <Link to="/selesai">
-                <Button
-                  style={{ backgroundColor: "red", color: "white" }}
-                  onClick={this.props.bayar}
-                >
-                  Bayar Sekarang
-                </Button>
-              </Link>
+              <Button
+                style={{ backgroundColor: "red", color: "white" }}
+                component={Link}
+                to="/selesai"
+                onClick={this.bayar}
+              >
+                Bayar Sekarang
+              </Button>
             </Container>
           </Jumbotron>
         </div>

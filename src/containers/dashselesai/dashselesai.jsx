@@ -21,6 +21,7 @@ export default class dashselesai extends Component {
     total: 0
   };
   render() {
+    const { total } = this.props;
     return (
       <div>
         <Header />

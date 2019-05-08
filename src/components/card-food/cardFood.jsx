@@ -11,6 +11,7 @@ export default class cardFood extends Component {
           <CardBody>
             <h1>{nama}</h1>
             <p> Harga : {harga}</p>
+            <p>{this.props.qty}</p>
             <center>
               <h1 />
               <Button
